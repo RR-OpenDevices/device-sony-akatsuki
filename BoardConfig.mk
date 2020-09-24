@@ -15,9 +15,9 @@
 include device/sony/tama/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := unknown
-ifneq (,$(filter %h8416,$(TARGET_PRODUCT)))
+ifneq (,$(filter %h8416 rr_akatsuki,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := H8416
-else ifneq (,$(filter %h9436,$(TARGET_PRODUCT)))
+else ifneq (,$(filter %h9436 rr_akatsuki_dsds,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := H9436
 else
 TARGET_BOOTLOADER_BOARD_NAME := H8416
